@@ -33,4 +33,4 @@ But we already see that the observed test statistic is already in the direction 
 Because we are not sure if (a) or (b) happens to us. Therefore before computing p-values, we need to declare a threshold alpha to minimize the chances of us being just lucky. In technical term, it means to avoid Type I error (i.e. rejecting null hypothesis when it is true).
 
 
-[^1]: <http://www.onthelambda.com/2014/02/10/how-dplyr-replaced-my-most-common-r-idioms/>
+[^1]: <https://onlinecourses.science.psu.edu/statprogram/node/138>

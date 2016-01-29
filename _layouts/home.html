@@ -1,0 +1,74 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include _head.html %}
+</head>
+
+<body class="home">
+
+{% include _browser-upgrade.html %}
+
+{% include _navigation.html %}
+
+{% if page.image.feature %}
+  <div class="image-wrap">
+  <img src=
+    {% if page.image.feature contains 'http' %}
+      "{{ page.image.feature }}"
+    {% else %}
+      "{{ site.url }}/images/{{ page.image.feature }}"
+    {% endif %}
+  alt="{{ page.title }} feature image">
+  {% if page.image.credit %}
+    <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
+  {% endif %}
+  </div><!-- /.image-wrap -->
+{% endif %}
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    {% include _author-bio.html %}
+  </div>
+  <div id="index">
+	<h3><a href="{{ site.url}}/posts/">Tien T. Nguyen</a></h3>
+	
+	<ul>
+	  <li>Computer Science Ph.D candidate @ the University of Minnesota, Twin-Cities</li>
+	  <li>Software engineer intern @ Google</li>
+	  <li>Research intern @ Microsoft Research</li>
+	  <li>Focus & interests: recommender system, HCI, data science, machine learning</li>
+	</ul>
+	
+	<!-- <p>I'm a Computer Science Ph.D candidate from the University of Minnesota, Twin-Cities. My advisors are Professor <a href="http://www-users.cs.umn.edu/~konstan/">Joseph Konstan</a> and Professor <a href="www-users.cs.umn.edu/~terveen/">Loren Terveen</a>.  I also was advised by Profesor <a href="www-users.cs.umn.edu/~riedl/">John Riedl</a> before he passed away in 2013. In my research I focus on Recommender System (RecSys) & users (the HCI of RecSys). </p>
+	
+	<p>I'm data enthusiast spending my time analyzing data and visualizing insights using <a href="https://www.r-project.org/">R</a> & mySQL. I am also a software engineer who is very interested in applying quantitative methods (e.g machine learning or data mining techniques) to make systems smarter or to make our daily life easier.</p>
+	
+	<p>I have interned at <a href="http://research.microsoft.com/en-us/labs/redmond/">Microsoft Research</a> and Google. I've had wonderful time at both places. If you're interested in knowning more, please check out my <a href="http://www-users.cs.umn.edu/~tien/CV/TienNguyenCV.pdf">CV</a>.</p>
+	  -->
+	<h3><a href="{{ site.url}}/posts/">Recent Posts</a></h3>
+    {% for post in site.posts limit:5 %}
+    <article>
+      {% if post.link %}
+        <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></h2>
+      {% else %}
+        <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+        <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+      {% endif %}
+    </article>
+    {% endfor %}
+  </div><!-- /#index -->
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  <footer>
+    {% include _footer.html %}
+  </footer>
+</div><!-- /.footer-wrap -->
+
+{% include _scripts.html %}
+
+</body>
+</html>

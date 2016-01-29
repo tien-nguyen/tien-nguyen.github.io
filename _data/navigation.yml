@@ -1,0 +1,13 @@
+# Site navigation links
+
+- title: About
+  url: /about/
+
+- title: All Posts
+  url: /posts/
+
+- title: Tags
+  url: /tags/
+
+- title: CV
+  url: http://www-users.cs.umn.edu/~tien/CV/TienNguyenCV.pdf

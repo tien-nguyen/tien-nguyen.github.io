@@ -8,7 +8,7 @@ image:
 date: 2015-09-02
 ---
 
-For me (and may be only me), the definition of p-value was counter-intuitive at first. I now take this chance to refresh myself about the definition of p-values and how to make a counter-intuitive definition become an intuitive one.
+For me the definition of p-value was counter-intuitive at first. I now take this chance to refresh myself about the definition of p-values and how to make a counter-intuitive definition become an intuitive one.
 
 According to [^1] when we compute a p-value we compute *the probability - when assuming the null hypothesis were true - of observing a more extreme test statistic in the direction of the alternative hypothesis than the one observed*. That is when p-value is small, the probability is small and vice versa. If p-value is smaller than a predefined alpha threshold, we can reject the null hypothesis in favor of the alternative hypothesis.
 

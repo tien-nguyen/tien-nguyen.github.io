@@ -33,6 +33,7 @@ The sum of all the computed rank is the final answer.
 
 **Note:** The below code does not handle overflow. It is to show how the implementation looks like.
 
+### Codes
 {% highlight java %}
 public int findRank(String s) {
 	
@@ -57,6 +58,6 @@ public int findRank(String s) {
 	
 	// rank is the number of element before it so we have to
 	// add 1 to get its rank.
-	return rank + 1; //
+	return rank + 1;
 }
 {% endhighlight %}

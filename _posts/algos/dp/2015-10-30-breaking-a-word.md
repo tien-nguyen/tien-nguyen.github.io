@@ -23,6 +23,7 @@ The elegant solution is that we maintain a boolean array whose length equals to 
 
 This algo helps to reduce our running time to O(n^2) time in the worst case.
 
+### Codes
 {% highlight java %}
 public int isBreakable(String s, ArrayList<String> dict) {
 	

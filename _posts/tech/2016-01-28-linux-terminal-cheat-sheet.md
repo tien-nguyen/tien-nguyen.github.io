@@ -3,7 +3,7 @@ layout: post
 title: Linux Terminal Cheat Sheet
 modified:
 categories: 
-excerpt: "A collection of short-cuts."
+excerpt: "A collection of short-cuts (to be slowly updated)."
 tags: [linux, terminal, cheat sheet]
 image:
   feature:

@@ -2,6 +2,7 @@
 layout: post
 title: R with dplyr and tidyr cheat sheet.
 excerpt: "A note on dplyr and tidyr"
+categories: data_science/r
 tags: [R, data science, cheat sheet]
 modified: 2015-08-20
 comments: true

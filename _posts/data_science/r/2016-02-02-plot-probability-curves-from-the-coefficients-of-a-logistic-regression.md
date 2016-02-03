@@ -3,7 +3,7 @@ layout: post
 title: Plot Probabilistic Curves From the Coefficients of a Logistic Regression
 modified:
 categories: data_science/r
-excerpt: "ploting probabilistic curves from the coefs of a logistic regression model."
+excerpt: "Ploting probabilistic curves from the coefs of a logistic regression model."
 tags: [R, data science, ggplot, logistic regression]
 image:
   feature:

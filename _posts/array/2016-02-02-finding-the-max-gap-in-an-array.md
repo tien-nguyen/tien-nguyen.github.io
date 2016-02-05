@@ -4,7 +4,7 @@ title: Finding the Max Gap in an Array
 modified:
 categories: array
 excerpt: "Finding the maximum gap in an array."
-tags: [array, binary search, frontier approach, sorting]
+tags: [algo, array, binary search, frontier approach, sorting]
 image:
   feature:
 date: 2016-02-02T22:25:38-08:00

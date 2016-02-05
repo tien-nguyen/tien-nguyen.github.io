@@ -4,7 +4,7 @@ title: Flip to Gain Max 1s
 modified:
 categories: array
 excerpt: Flipping by applying a cost function.
-tags: [algo, array, applying cost, dynamic programming]
+tags: [algo, array, applying cost, dynamic programming, array math]
 image:
   feature:
 date: 2015-09-28

@@ -9,7 +9,7 @@ url: http://tien-nguyen.github.io
 
 permalink:   /:categories/:title/
 markdown:    kramdown
-highlighter: rouge
+highlighter: pygments
 sass:
   sass_dir: _sass
   style: compressed

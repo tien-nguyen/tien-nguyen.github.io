@@ -4,7 +4,7 @@ title: Breaking a Word
 modified:
 categories: algos/dp/
 excerpt: "Breaking a word in an elegant way."
-tags: [algo, dynamic programming]
+tags: [algo, dynamic programming, ending at technique]
 image:
   feature:
 date: 2015-10-30
